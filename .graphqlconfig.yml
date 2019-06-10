@@ -1,0 +1,16 @@
+projects:
+  cuppacounta:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.js
+    excludes:
+      - amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
+        graphQLApiId: i2u6kntjijaatd6dbzwqiab2pi
+      endpoints:
+        prod: >-
+          https://6zbzbtjtu5dpvawhq5zv3xdipa.appsync-api.eu-west-1.amazonaws.com/graphql

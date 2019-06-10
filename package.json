@@ -1,0 +1,40 @@
+{
+  "name": "cuppacounta",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "redux-devtools": "redux-devtools --hostname=localhost --port=8000 --injectserver=reactnative"
+  },
+  "dependencies": {
+    "aws-amplify": "^1.1.26",
+    "aws-amplify-react-native": "^2.1.10",
+    "aws-appsync": "^1.7.2",
+    "graphql-tag": "^2.10.1",
+    "prop-types": "^15.7.2",
+    "react": "16.8.3",
+    "react-native": "0.59.4",
+    "react-native-elements": "^1.1.0",
+    "react-native-gesture-handler": "^1.2.0",
+    "react-native-ui-kitten": "3.1.2",
+    "react-native-vector-icons": "^6.4.2",
+    "react-navigation": "^3.9.1",
+    "react-redux": "^7.0.2",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+    "@babel/runtime": "^7.4.3",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "react-test-renderer": "16.8.3",
+    "redux-devtools-extension": "^2.13.8"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

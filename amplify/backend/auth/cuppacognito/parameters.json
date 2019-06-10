@@ -1,0 +1,51 @@
+{
+    "userPoolName": "cuppacounta_userpool",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "cuppacognito_sns-role",
+    "roleExternalId": "cuppacognito_role_external_id",
+    "policyName": "cuppacognito-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your Cuppa Counta verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": true,
+    "passwordPolicyMinLength": "8",
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "cuppacognito_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientReadAttributes": [
+        "email",
+        "nickname",
+        "picture"
+    ],
+    "mfaLambdaRole": "cuppacognito_totp_lambda_role",
+    "mfaLambdaLogPolicy": "cuppacognito_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "cuppacognito_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "cuppacognito_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "cuppacognito_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "cuppacognito_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "cuppacognito_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": true,
+    "useDefault": "manual",
+    "authSelections": "userPoolOnly",
+    "resourceName": "cuppacognito",
+    "userpoolClientWriteAttributes": [
+        "nickname",
+        "picture",
+        "email"
+    ],
+    "unAuthRoleName": "cuppacounter-20190429151934-unauthRole",
+    "authRoleName": "cuppacounter-20190429151934-authRole",
+    "unAuthRoleArn": "arn:aws:iam::654772728985:role/cuppacounter-20190429151934-unauthRole",
+    "authRoleArn": "arn:aws:iam::654772728985:role/cuppacounter-20190429151934-authRole"
+}

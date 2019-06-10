@@ -1,0 +1,54 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "cuppacounter-20190508122156-authRole",
+			"UnauthRoleArn": "arn:aws:iam::654772728985:role/cuppacounter-20190508122156-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::654772728985:role/cuppacounter-20190508122156-authRole",
+			"Region": "eu-west-1",
+			"DeploymentBucketName": "cuppacounter-20190508122156-deployment",
+			"UnauthRoleName": "cuppacounter-20190508122156-unauthRole",
+			"StackName": "cuppacounter-20190508122156",
+			"StackId": "arn:aws:cloudformation:eu-west-1:654772728985:stack/cuppacounter-20190508122156/7d067360-7183-11e9-a70d-06952668af9c"
+		}
+	},
+	"auth": {
+		"cuppacountacognito": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/cuppacounter-20190508122156-deployment/amplify-cfn-templates/auth/cuppacountacognito-cloudformation-template.yml",
+				"logicalId": "authcuppacountacognito"
+			},
+			"lastPushTimeStamp": "2019-05-10T08:12:12.224Z",
+			"output": {
+				"AppClientSecret": "6jqf8fe1n032ae683te0pd23p4brqbmaf00o37u01q08t9qfp4p",
+				"UserPoolId": "eu-west-1_b3OfLBvtq",
+				"AppClientIDWeb": "1oi0n19n3llf0n0m78b6f23tlt",
+				"AppClientID": "7biim8an0f26lbmgelmlbkui4v",
+				"UserPoolName": "cuppacounta_user_pool"
+			},
+			"lastPushDirHash": "DkLoApx3HF8kDNrojatjCWoVt5Q="
+		}
+	},
+	"api": {
+		"cuppacounta": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "AMAZON_COGNITO_USER_POOLS",
+				"GraphQLAPIIdOutput": "i2u6kntjijaatd6dbzwqiab2pi",
+				"GraphQLAPIEndpointOutput": "https://6zbzbtjtu5dpvawhq5zv3xdipa.appsync-api.eu-west-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-jk3qtliaybcghcevxad5hmgspm",
+				"AuthCognitoUserPoolIdOutput": "eu-west-1_b3OfLBvtq",
+				"AuthCognitoUserPoolNativeClientId": "See UserPool: eu-west-1_b3OfLBvtq",
+				"AuthCognitoUserPoolJSClientId": "See UserPool: eu-west-1_b3OfLBvtq"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/cuppacounter-20190508122156-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apicuppacounta"
+			},
+			"lastPushTimeStamp": "2019-05-10T08:12:13.766Z",
+			"lastPushDirHash": "4qaS/cPFjI8qE0O4NYr3kXynPQc="
+		}
+	}
+}

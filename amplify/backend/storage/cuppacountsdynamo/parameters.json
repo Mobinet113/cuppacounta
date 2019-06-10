@@ -1,0 +1,7 @@
+{
+    "tableName": "Cuppa-counts",
+    "partitionKeyName": "USERID",
+    "partitionKeyType": "S",
+    "sortKeyName": "TEAMID",
+    "sortKeyType": "S"
+}

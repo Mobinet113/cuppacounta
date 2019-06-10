@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "cuppacounta",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcuppacountacognito",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "schemaGraphql": "s3://cuppacounter-20190508122156-deployment/amplify-appsync-files/schema.graphql.1557475836837",
+    "ResolverBucket": "cuppacounter-20190508122156-deployment",
+    "ResolverRootKey": "amplify-appsync-files",
+    "DeploymentTimestamp": "1557475836837"
+}

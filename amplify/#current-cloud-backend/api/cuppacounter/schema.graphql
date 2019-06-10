@@ -1,0 +1,10 @@
+type Cuppas @model {
+	id: ID!
+	USERID: String!
+}
+
+type Team @model {
+	id: ID!
+	TEAMID: String!
+	USERID: String!
+}

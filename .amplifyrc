@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "cuppacounter-20190508122156-authRole",
+            "UnauthRoleArn": "arn:aws:iam::654772728985:role/cuppacounter-20190508122156-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::654772728985:role/cuppacounter-20190508122156-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "cuppacounter-20190508122156-deployment",
+            "UnauthRoleName": "cuppacounter-20190508122156-unauthRole",
+            "StackName": "cuppacounter-20190508122156",
+            "StackId": "arn:aws:cloudformation:eu-west-1:654772728985:stack/cuppacounter-20190508122156/7d067360-7183-11e9-a70d-06952668af9c"
+        }
+    }
+}
